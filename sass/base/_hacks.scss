@@ -1,0 +1,15 @@
+/* Reset font size for off-canvas UI */
+#drupal-off-canvas {
+  font-size: 16px;
+}
+
+/* Force background of autcomplete to be white when selecting existing media */
+#drupal-off-canvas .ui-autocomplete li,
+#drupal-off-canvas .ui-autocomplete li a {
+  background: #fff !important;
+}
+
+/* Prevent autocomplete going beyond off-canvas container */
+#drupal-off-canvas .form-autocomplete {
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+THEMENAME.small:
+  label: small
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+THEMENAME.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+THEMENAME.large:
+  label: large
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+THEMENAME.extralarge:
+  label: extra large
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x

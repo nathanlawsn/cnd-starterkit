@@ -1,0 +1,207 @@
+layout_onecol:
+  label: 'One column'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--onecol-100
+  category: 'My Layouts'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
+layout_twocol:
+  label: 'Two column 6/6'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-50-50
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_threecol_25_50_25:
+  label: 'Three column 3/6/3'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--threecol-25-50-25
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+layout_threecol_33_34_33:
+  label: 'Three column 4/4/4'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--threecol-33-34-33
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+layout_fourcol_25_25_25_25:
+  label: 'Four column 3/3/3/3'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--fourcol-25-25-25-25
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+
+layout_twocol_34_66:
+  label: 'Two column 4/8'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-34-66
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second, second]
+  regions:
+    header:
+      label: Header
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_66_34:
+  label: 'Two column 8/4'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-66-34
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, first, second]
+  regions:
+    header:
+      label: Header
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_threecol_50_25_25:
+  label: 'Three column 6/3/3'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--threecol-50-25-25
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+layout_threecol_25_25_50:
+  label: 'Three column 3/3/6'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--threecol-25-25-50
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second, third, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+layout_twocol_25_75:
+  label: 'Two column 3/9'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-25-75
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, second, second, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_75_25:
+  label: 'Two column 9/3'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-75-25
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, first, first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_42_58:
+  label: 'Two column 5/7'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-42-58
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, first, second, second, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+layout_twocol_58_42:
+  label: 'Two column 7/5'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-58-42
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
+    - [header]
+    - [first, first, first, second, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
