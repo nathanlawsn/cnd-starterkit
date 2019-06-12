@@ -1,5 +1,5 @@
 name: Consult and Design Basic
-description: 'A custom theme for PROJECT NAME by Consult and Design.'
+description: 'A custom theme for demonstration purposes by Consult and Design.'
 
 package: custom
 type: theme
@@ -10,7 +10,7 @@ version: 1.0
 base theme: classy
 
 libraries:
-  - cnd_starterkit/global-styling
+  - cnd_basic/global-styling
 
 regions:
   branding: Branding
