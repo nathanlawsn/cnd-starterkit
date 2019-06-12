@@ -7,7 +7,7 @@
     -webkit-appearance: none;
     width: 100%;
     display: block;
-    @include breakpoint($desktop) {
+    @include media-breakpoint-up(lg) {
       width: auto;
     }
   }
