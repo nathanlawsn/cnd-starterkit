@@ -18,3 +18,6 @@
 .layout-builder-block {
   @include rem(padding, 15px 0);
 }
+.node-page-layout-builder-form {
+  @include rem(padding, 0 50px);
+}

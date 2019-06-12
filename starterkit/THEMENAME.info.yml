@@ -10,7 +10,7 @@ version: 1.0
 base theme: classy
 
 libraries:
-  - cnd_starterkit/global-styling
+  - THEMENAME/global-styling
 
 regions:
   branding: Branding
