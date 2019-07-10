@@ -19,6 +19,11 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <div class="container">
+
+      {% if data.section_name %}
+        <h2 class="section-name">{{ data.section_name }}</h2>
+      {% endif %}
+
       <div class="row">
 
       {% if content.header %}
@@ -36,6 +41,12 @@
       {% if content.second %}
         <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-lg-4') }}>
           {{ content.second }}
+        </div>
+      {% endif %}
+
+      {% if content.footer %}
+        <div {{ region_attributes.footer.addClass('layout__region', 'layout__region--footer', 'col-12') }}>
+          {{ content.header }}
         </div>
       {% endif %}
 

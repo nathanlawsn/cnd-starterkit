@@ -10,6 +10,18 @@ layout_onecol:
     content:
       label: Content
 
+layout_onecol_full:
+  label: 'One column (Full width)'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--onecol-100-full
+  category: 'My Layouts'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
 layout_twocol:
   label: 'Two column 6/6'
   class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
@@ -18,6 +30,25 @@ layout_twocol:
   default_region: first
   icon_map:
     - [header]
+    - [first, second]
+    - [footer]
+  regions:
+    header:
+      label: Header
+    first:
+      label: First
+    second:
+      label: Second
+    footer:
+      label: Footer
+
+layout_twocol_full:
+  label: 'Two column 6/6 (Full width)'
+  class: '\Drupal\cnd_layouts\Plugin\Layout\ConfigurableLayout'
+  template: templates/layout/layout--twocol-50-50-full
+  category: 'My Layouts'
+  default_region: first
+  icon_map:
     - [first, second]
   regions:
     first:
@@ -34,13 +65,18 @@ layout_threecol_25_50_25:
   icon_map:
     - [header]
     - [first, second, second, third]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
     third:
       label: Third
+    footer:
+      label: Footer
 
 layout_threecol_33_34_33:
   label: 'Three column 4/4/4'
@@ -51,13 +87,18 @@ layout_threecol_33_34_33:
   icon_map:
     - [header]
     - [first, second, third]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
     third:
       label: Third
+    footer:
+      label: Footer
 
 layout_fourcol_25_25_25_25:
   label: 'Four column 3/3/3/3'
@@ -68,7 +109,10 @@ layout_fourcol_25_25_25_25:
   icon_map:
     - [header]
     - [first, second, third, fourth]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
@@ -77,6 +121,8 @@ layout_fourcol_25_25_25_25:
       label: Third
     fourth:
       label: Fourth
+    footer:
+      label: Footer
 
 layout_twocol_34_66:
   label: 'Two column 4/8'
@@ -87,6 +133,7 @@ layout_twocol_34_66:
   icon_map:
     - [header]
     - [first, second, second]
+    - [footer]
   regions:
     header:
       label: Header
@@ -94,6 +141,8 @@ layout_twocol_34_66:
       label: First
     second:
       label: Second
+    footer:
+      label: Footer
 
 layout_twocol_66_34:
   label: 'Two column 8/4'
@@ -104,6 +153,7 @@ layout_twocol_66_34:
   icon_map:
     - [header]
     - [first, first, second]
+    - [footer]
   regions:
     header:
       label: Header
@@ -111,6 +161,8 @@ layout_twocol_66_34:
       label: First
     second:
       label: Second
+    footer:
+      label: Footer
 
 layout_threecol_50_25_25:
   label: 'Three column 6/3/3'
@@ -121,13 +173,18 @@ layout_threecol_50_25_25:
   icon_map:
     - [header]
     - [first, first, second, third]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
     third:
       label: Third
+    footer:
+      label: Footer
 
 layout_threecol_25_25_50:
   label: 'Three column 3/3/6'
@@ -138,13 +195,18 @@ layout_threecol_25_25_50:
   icon_map:
     - [header]
     - [first, second, third, third]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
     third:
       label: Third
+    footer:
+      label: Footer
 
 layout_twocol_25_75:
   label: 'Two column 3/9'
@@ -155,11 +217,16 @@ layout_twocol_25_75:
   icon_map:
     - [header]
     - [first, second, second, second]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
+    footer:
+      label: Footer
 
 layout_twocol_75_25:
   label: 'Two column 9/3'
@@ -170,11 +237,16 @@ layout_twocol_75_25:
   icon_map:
     - [header]
     - [first, first, first, second]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
+    footer:
+      label: Footer
 
 layout_twocol_42_58:
   label: 'Two column 5/7'
@@ -185,11 +257,16 @@ layout_twocol_42_58:
   icon_map:
     - [header]
     - [first, first, second, second, second]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
+    footer:
+      label: Footer
 
 layout_twocol_58_42:
   label: 'Two column 7/5'
@@ -200,8 +277,13 @@ layout_twocol_58_42:
   icon_map:
     - [header]
     - [first, first, first, second, second]
+    - [footer]
   regions:
+    header:
+      label: Header
     first:
       label: First
     second:
       label: Second
+    footer:
+      label: Footer

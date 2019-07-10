@@ -1,9 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation for a three column layout.
- *
- * This template provides a three column 25%-50%-25% display layout.
+ * Default theme implementation to display a full width two-column layout.
  *
  * Available variables:
  * - content: The content for this layout.
@@ -15,12 +13,12 @@
 {%
   set classes = [
     'layout',
-    'layout--threecol-25-50-25',
+    'layout--twocol',
   ]
 %}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="container">
+    <div class="container-fluid">
 
       {% if data.section_name %}
         <h2 class="section-name">{{ data.section_name }}</h2>
@@ -35,7 +33,7 @@
       {% endif %}
 
       {% if content.first %}
-        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-lg-3') }}>
+        <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first', 'col-lg-6') }}>
           {{ content.first }}
         </div>
       {% endif %}
@@ -43,18 +41,6 @@
       {% if content.second %}
         <div {{ region_attributes.second.addClass('layout__region', 'layout__region--second', 'col-lg-6') }}>
           {{ content.second }}
-        </div>
-      {% endif %}
-
-      {% if content.third %}
-        <div {{ region_attributes.third.addClass('layout__region', 'layout__region--third', 'col-lg-3') }}>
-          {{ content.third }}
-        </div>
-      {% endif %}
-
-      {% if content.footer %}
-        <div {{ region_attributes.footer.addClass('layout__region', 'layout__region--footer', 'col-12') }}>
-          {{ content.header }}
         </div>
       {% endif %}
 
