@@ -1,0 +1,57 @@
+#sliding-popup.sliding-popup-bottom {
+    /*background: $primary-color;*/
+    font-family: $heading-font-family;
+    @include rem(padding, 20px);
+    @include media-breakpoint-up(md) {
+      right: 40px !important;
+      left: auto !important;
+      bottom: 40px !important;
+      width: 480px !important;
+      @include rem(padding, 25px);
+    }
+    .popup-content {
+        max-width: none;
+        #popup-text {
+            text-align: center;
+            float: none;
+            max-width: none;
+            margin: 0;
+            flex: 0 0 100%;
+        h2 {
+            color: $base-color;
+            @include rem(font-size, 24px);
+            line-height: 1.25;
+            @include rem(margin, 0 0 10px 0);
+        }
+        p, .find-more-button {
+            color: $base-color;
+            @include rem(font-size, 20px);
+            font-weight: $regular;
+            margin: 0;
+        }
+      }
+      #popup-buttons {
+          float: none;
+          max-width: none;
+          display: flex;
+          justify-content: space-between;
+          @include rem(margin, 20px 0 0 0);
+          @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: space-between;
+          }
+          button {
+              @extend .button;
+              @extend .button--white;
+              @extend .button--small;
+              border: none;
+              box-shadow: none;
+              text-shadow: none;
+              background-image: none;
+              margin: 0;
+              flex-basis: calc(50% - 10px);
+            }
+        }
+    }
+}
+  

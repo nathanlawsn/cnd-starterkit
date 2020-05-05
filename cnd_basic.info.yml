@@ -17,4 +17,5 @@ regions:
   navigation: Navigation
   header: Header
   content: Content
+  sidebar: Sidebar
   footer: Footer

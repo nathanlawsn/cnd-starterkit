@@ -6,11 +6,9 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var importer = require('node-sass-globbing');
 var plumber = require('gulp-plumber');
-var browserSync = require('browser-sync').create();
 var cssmin = require('gulp-cssmin');
-var uncss = require('gulp-uncss');
 var stripCssComments = require('gulp-strip-css-comments');
-var uglify = require('gulp-uglify');
+var terser = require('gulp-terser');
 var livereload = require('gulp-livereload');
 var shell = require('gulp-shell');
 var sass_config = {
@@ -46,7 +44,7 @@ gulp.task('connect', function() {
 // Minify JavaScript
 gulp.task('uglify', function() {
   return gulp.src('js/*.js')
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('js/minified'));
 });
 
